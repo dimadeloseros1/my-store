@@ -14,7 +14,7 @@ const ProductImage = ({product, fill}) => {
                  loader={cargador} 
                  src={product.image} 
                  alt={product.title}
-                 width={200} 
+                 width={150} 
                  height={200}
                  className={`object-contain duration-700 ease-in-out group-hover:opacity-75 ${
                     loading
