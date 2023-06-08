@@ -1,3 +1,4 @@
+import Nav from './components/Nav'
 import Provider from './context/AuthContext'
 import ToasterContext from './context/ToasterContext'
 import './globals.css'
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Provider>
           <ToasterContext />
+          <Nav />
           {children}
         </Provider>
       </body>

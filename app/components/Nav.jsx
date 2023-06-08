@@ -15,7 +15,7 @@ const Nav = () => {
 
   return (
     <nav className="flex justify-between items-center bg-white w-[89%] m-auto fixed top-5 left-1/2 translate-x-[-50%] rounded-xl p-6 h-20 shadow-xl bg-opacity-40">
-        <h1 className="text-2xl font-bold italic uppercase text-gray-700">Space Travels</h1>
+        <h1 className="text-2xl font-bold italic uppercase text-gray-700">Poundlanders</h1>
         <ul className={`md:flex gap-12 [&>li]:cursor-pointer font-medium absolute md:static top-20 bg-white max-md:p-3 text-center ${openMenu ? "" : "hidden"}`}>
                 <li className='flex mx-3 gap-2'>
                     <p>Hi</p><span className='text-red-600'>{session?.user?.name}</span>
