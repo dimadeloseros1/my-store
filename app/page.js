@@ -13,14 +13,12 @@ export default async function Home() {
   const products = await fetchingData();
   const session = await getServerSession(authOptions);
   return (
-    <main className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-      {products.map((product) => (
-        <div className=" p-4">
-          <Products product={product} />
-        </div>
-      ))}
-      <Nav />
-      <Hero />
-    </main>
+        <main className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 relative">
+          {products.map((product) => (
+            <div className="p-4  mx-5">
+              <Products product={product} />
+            </div>
+          ))}
+        </main>
   );
 }
